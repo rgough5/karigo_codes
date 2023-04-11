@@ -13,7 +13,7 @@ function annot = foundAnnot(vidFile)
     end
 
     annot = strcat(p, filesep, n, '.annot');
-    copyfile('.base.annot', annot) %this makes a new annot file and names it after the mp4 file
+    copyfile('base.annot', annot) %this makes a new annot file and names it after the mp4 file
     freeline(annot, 'Stimulus name:', strcat('Annotation stop frame: ', string(fCount))); %see below for notes on this function
     freeline(annot, 'Stimulus name:', strcat('Annotation framerate: ', string(fRate)));
     delete temp*.txt
