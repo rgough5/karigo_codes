@@ -1,10 +1,8 @@
-# bentoMATAug
-Some scripts designed for the Karigo Lab to add/edit `.annot` files for the bento mouse behavior annotation software created by Ann Kennedy: https://github.com/neuroethology/bentoMAT/blob/master/LICENSE.txt.
+# Codes for the Karigo Lab
+Some scripts designed for the Karigo Lab. Mostly to work with `.annot` files for [bento](https://github.com/neuroethology/bentoMAT/tree/master)
 
-## Usage
-### Annotate a directory
-call2annot.m and led2annot.m work best one at a time on existing annotations, but if you want to add annotate several files at onces throw all the files into the same directory and run annotDir.m on that directory.
-### Annotate a directory
+## Stuff here
+### Annotate a directory (not recommended)
 I recommend just using but you can use `annotDir.m`. This currently assumes that your directory is setup with a certain ratio:
 1 video : 1 usv call file : 1 desired annotation OR 2 videos : 1 usv call file : 1 desired annotation
 
