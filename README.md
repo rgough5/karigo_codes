@@ -13,3 +13,8 @@ This is a work in progress. If you have any issues or requests please message me
 
 ### Convert annotations to csv.
 An awful WIP, I probably should have left this in the dev branch, but hey it's my repo. Use annot2csv.ipynb to convert a an annotation file to a csv with a text file key. This csv will have one columns per channel and rows equal to the desired number of timestamps. This assumes annotations within a channel do not overlap. It can easily be editted to ignore channels and simply have one behavior per column, but that increases the file size and is a lot slower.
+
+### Arduino code for optogenetic stimulation
+Hardware requirements: Arduino UNO, ThorLabs shutter that responds to external input as the 2hb025t does, wires, BNC Cables (optional)
+Software requirements: Arduino IDE, serial monitor or a similair tool to read serial output from the Arduino
+Turn the rotary encoder (the knob) on the Arduino to select shutter settings: serial monitor will display which option is selected. Press the indendent button the begin stimulation. Press down on the rotary encoder to stop stimulation early. (Further details and wiring guide coming).
